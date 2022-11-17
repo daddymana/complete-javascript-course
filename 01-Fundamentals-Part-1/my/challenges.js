@@ -1,5 +1,3 @@
-'use strict';
-
 console.log('-> Challenge 1 START 👉');
 
 const markWeight = 78;
