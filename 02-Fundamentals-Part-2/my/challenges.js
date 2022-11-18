@@ -72,3 +72,33 @@ if (mark.bmi > john.bmi) {
 
 console.log('-> Challenge 3 END 👋');
 console.log('******************************');
+
+console.log('-> Challenge 4 START 👉');
+
+const bills4 = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips4 = [];
+const totals4 = [];
+
+for (let i = 0; i < bills4.length; i++) {
+  const tip = calcTip(bills4[i]);
+  tips4.push( tip );
+  totals4.push( bills4[i] + tip );
+}
+
+console.log(bills4, tips4, totals4);
+
+const totals4Avg = function(tot) {
+  let allTotals = 0;
+  
+  for (let i = 0; i < tot.length; i++) {
+    allTotals += tot[i];
+  }
+
+  return allTotals / tot.length
+}
+
+console.log(`Average totals is ${totals4Avg(totals4)}`);
+
+
+console.log('-> Challenge 4 END 👋');
+console.log('******************************');

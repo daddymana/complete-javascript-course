@@ -42,5 +42,14 @@ console.log(daniele[`last${nameKey}`]);
 daniele.location = 'Italy';
 
 console.log(`${daniele.firstName} ha ${daniele.friends.length} amici, e il suo migliore amico si chiama ${daniele.friends[0]}`);
-
 console.log(daniele.getSummary());
+
+// WHILE
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+
+  if (dice === 6) console.log('The while loop sta terminando...')
+}
