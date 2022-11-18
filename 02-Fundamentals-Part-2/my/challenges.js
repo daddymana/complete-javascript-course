@@ -39,3 +39,36 @@ console.log(totals);
 
 console.log('-> Challenge 2 END 👋');
 console.log('******************************');
+
+console.log('-> Challenge 3 START 👉');
+
+const mark = {
+  firstName: 'Mark',
+  lastName: 'Miller',
+  weight: 78,
+  height: 1.69,
+  calcBMI: function() {
+    this.bmi = this.weight / (this.height * 2);
+    return this.bmi
+  }
+}
+
+const john = {
+  firstName: 'John',
+  lastName: 'Smith',
+  weight: 92,
+  height: 1.95,
+  calcBMI: function() {
+    this.bmi = this.weight / (this.height * 2);
+    return this.bmi
+  }
+}
+
+if (mark.bmi > john.bmi) {
+  console.log(`${mark.firstName}'s BMI (${mark.calcBMI()}) is higher than ${john.firstName}'s (${john.calcBMI()})`);
+} else {
+  console.log(`${john.firstName}'s BMI (${john.calcBMI()}) is higher than ${mark.firstName}'s (${mark.calcBMI()})`);
+}
+
+console.log('-> Challenge 3 END 👋');
+console.log('******************************');
