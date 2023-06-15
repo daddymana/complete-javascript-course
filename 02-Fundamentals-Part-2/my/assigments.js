@@ -12,11 +12,11 @@ const daniele = {
   lastName: 'Manassero',
   birthYear: 1984,
   job: 'developer ',
-  friends: ['Fulvio', 'Marcvo', 'Enrico'],
+  friends: ['Fulvio', 'Marco', 'Enrico'],
   hasDrivesLIcense: true,
 
   calcAge: function() {
-    this.age = 2022 - this.birthYear;
+    this.age = 2023 - this.birthYear;
     return this.age
   },
 
